@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.0.61",
+    "gatsby": "^2.0.62",
     "gatsby-image": "^2.0.22",
     "gatsby-plugin-manifest": "^2.0.11",
     "gatsby-plugin-offline": "^2.0.18",
@@ -14,8 +14,7 @@
     "gatsby-transformer-sharp": "^2.1.9",
     "react": "16.7.0-alpha.2",
     "react-dom": "16.7.0-alpha.2",
-    "react-helmet": "^5.2.0",
-    "react-hot-loader": "^4.5.1"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"
@@ -23,7 +22,6 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "predevelop": "rm -rf .cache && gatsby-dev --scan-once --quiet --packages gatsby && chmod +x ./node_modules/.bin/gatsby",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
