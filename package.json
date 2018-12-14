@@ -10,7 +10,8 @@
     "gatsby-plugin-offline": "^2.0.18",
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-sharp": "^2.0.14",
-    "gatsby-source-filesystem": "^2.0.10",
+    "gatsby-source-filesystem": "^2.0.12",
+    "gatsby-transformer-remark": "^2.1.15",
     "gatsby-transformer-sharp": "^2.1.9",
     "react": "16.7.0-alpha.2",
     "react-dom": "16.7.0-alpha.2",
@@ -22,15 +23,12 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "prestart": "rimraf .cache && gatsby-dev --scan-once --quiet --packages gatsby && chmod +x ./node_modules/.bin/gatsby",
+    "__predevelop__": "rimraf .cache && gatsby-dev --scan-once --quiet --packages gatsby && chmod +x ./node_modules/.bin/gatsby",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "prettier": "^1.15.3"
   },
   "resolutions": {
     "react-hot-loader": "4.6.0"

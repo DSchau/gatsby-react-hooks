@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
+
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 function SecondPage() {
   const [count, setCount] = useState(0)
 
   return (
     <Layout>
-      <p>Hey look, hooks are broken here!</p>
+      <SEO title="Page two" description="The second page, of course!" />
+      <p>Hey look, hooks work here too!</p>
       <div>
         <p>
           <b>Count: {count}</b>
