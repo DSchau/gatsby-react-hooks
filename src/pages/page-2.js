@@ -10,7 +10,7 @@ function SecondPage() {
   return (
     <Layout>
       <SEO title="Page two" description="The second page, of course!" />
-      <p>Hey look, hooks work here too!</p>
+      <p>Hey look, hooks work here too! <span role="img" aria-label="Tada emoji">🎉</span></p>
       <div>
         <p>
           <b>Count: {count}</b>

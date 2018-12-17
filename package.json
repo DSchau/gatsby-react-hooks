@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.0.62",
+    "gatsby": "^2.0.69",
     "gatsby-image": "^2.0.22",
     "gatsby-plugin-manifest": "^2.0.11",
     "gatsby-plugin-offline": "^2.0.18",
@@ -22,16 +22,13 @@
   ],
   "license": "MIT",
   "scripts": {
+    "prebuild": "npm run predevelop",
     "build": "gatsby build",
-    "__predevelop__": "rimraf .cache && gatsby-dev --scan-once --quiet --packages gatsby && chmod +x ./node_modules/.bin/gatsby",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "resolutions": {
-    "react-hot-loader": "4.6.0"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Counter() {
-  const [count, setCount] = useState(10)
+  const [count, setCount] = useState(100)
   return (
     <div>
       <p>
