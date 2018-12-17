@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Gatsby + Hooks',
+    description: 'A demonstration of React Hooks + Gatsby',
+    author: 'Dustin Schau'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -11,7 +13,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: []
+      }
+    },
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
