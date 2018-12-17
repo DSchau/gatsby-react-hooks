@@ -22,7 +22,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "prebuild": "npm run predevelop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
